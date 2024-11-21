@@ -1,0 +1,5 @@
+numpy
+PIL
+torch
+torchvision
+tqdm
