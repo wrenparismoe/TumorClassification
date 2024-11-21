@@ -19,7 +19,7 @@ def get_data_loaders(dataset_dir="./data", batch_size=16, train_split=0.7, val_s
 
     # Define transformations for the dataset
     transform = transforms.Compose([
-        transforms.Resize((256, 256)), # (224, 224) or (avg_width, avg_height)
+        transforms.Resize((224, 224)), # (256, 256) or (avg_width, avg_height)
         transforms.ToTensor(),
         transforms.Normalize(mean=[0.5], std=[0.5])  # Normalize to range [-1, 1]
     ])
