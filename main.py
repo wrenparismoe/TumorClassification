@@ -15,11 +15,12 @@ def main():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
     # Load data
+    print("Loading data...")
     train_loader, val_loader, test_loader, class_names = get_data_loaders(dataset_dir, batch_size=batch_size)
     num_classes = len(class_names)
 
     # Initialize model
-    #model = get_model(num_classes)
+    print("Initializing model...")
     model = BrainTumorCNN(num_classes)
 
     # Loss and optimizer
@@ -27,6 +28,7 @@ def main():
     optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
     # Train the model
+    print("Beginning Training...")
     trained_model = train_model(model, train_loader, val_loader, criterion, optimizer, device, num_epochs=num_epochs)
 
     # Save the trained model
