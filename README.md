@@ -1,6 +1,6 @@
 # Brain Tumor Classification
 
-This project implements a convolutional neural network (CNN) to classify brain tumor MRI scans into four categories: glioma, meningioma, pituitary tumor, and healthy brain. The model is trained using the dataset available from [Kaggle][https://www.kaggle.com/datasets/rm1000/brain-tumor-mri-scans/data] and utilizes PyTorch for deep learning.
+This project implements a convolutional neural network (CNN) to classify brain tumor MRI scans into four categories: glioma, meningioma, pituitary tumor, and healthy brain. The model is trained using the dataset available from [Kaggle](https://www.kaggle.com/datasets/rm1000/brain-tumor-mri-scans/data) and utilizes PyTorch for deep learning.
 
 ## Project Structure
 
