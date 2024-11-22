@@ -38,8 +38,10 @@ You can download the dataset by running the `data_download.sh` script, which fet
    cd TumorClassification
    ```
 2. Ensure you have Python 3.x and the necessary dependencies. You can install them using `pip`:
-   ```pip install -r requirements.txt```
-3. Download the dataset using bash:
+   ```
+   pip install -r requirements.txt
+   ```
+4. Download the dataset using bash:
    ```bash
    chmod +x data_download.sh
    ./data_download.sh
